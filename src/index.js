@@ -24,7 +24,7 @@ const StarDisplay=props=>(
 )
 const PlayAgain =props=>(
     <div className="game-done" >
-      <div style={{color:props.gameStatus==='won'?'green':'red'}}>{props.gameStatus==='won' ? 'Won' : 'Game Over'}</div>
+      <div className="message" style={{color:props.gameStatus==='won'?'green':'red'}}>{props.gameStatus==='won' ? 'Won' : 'Game Over'}</div>
       <button onClick={props.onClick}>PlayAgain</button>
     </div>
 )
